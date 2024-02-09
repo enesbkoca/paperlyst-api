@@ -12,5 +12,8 @@ class Database:
     def create_collections(self):
         self.collection = self.client.create_collection(
             name="abstract",
+            metadata={"hnsw:space": "cosine"},
             embedding_function=self.embedding_function
         )
+
+
