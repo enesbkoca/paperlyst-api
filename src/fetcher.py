@@ -1,6 +1,9 @@
 from scidownl import scihub_download
 import os
-
+#TODO : 1) Store DOIS in database in order not to download papers you already have
+#TODO : 2) Add a function to check if the paper is already in the database
+#TODO : 3) Store the papers in a database instead of direcotry
+#TODO : 4) Check yield technique for the main controller. We can have pipelining in this way.
 
 # Pipelined function to get the DOIs from the files
 def get_dois_from_file(file_path):
