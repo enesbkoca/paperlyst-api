@@ -1,1 +1,1 @@
-Scientific Scroll Project
+Paperlyst.app Project
