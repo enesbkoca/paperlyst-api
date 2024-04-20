@@ -1,1 +1,2 @@
-Add requirements here and in docker file mention the requirements file
+flask
+confluent-kafka
