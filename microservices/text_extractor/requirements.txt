@@ -1,1 +1,2 @@
-Add requirements here and in docker file mention the requirements file
+PyMuPDFb==1.24.1
+requests==2.26.0
