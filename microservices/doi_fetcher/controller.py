@@ -1,13 +1,11 @@
-# from flask import Blueprint, jsonify
-#
-# microservice1_controller = Blueprint('microservice1', __name__)
-#
-# @microservice1_controller.route('/endpoint', methods=['POST'])
-# def endpoint_handler():
-#     data = request.json
-#
-#     # Call service method for microservice 1
-#     result = microservice1_service.process_data(data)
-#
-#     # Format and return response
-#     return jsonify(result)
+import logging
+from service import DoiFetcherService
+
+def main():
+    doi_fetcher_service = DoiFetcherService()
+    doi_fetcher_service.consume_messages()
+
+if __name__ == "__main__":
+    # Configure logging
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    main()
